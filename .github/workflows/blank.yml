@@ -27,7 +27,7 @@ jobs:
 
       - name: Print secret variable
         env:
-         MY_VARIABLE: ${{ vars.MY_VARIABLE }}
+         MY_VARIABLE: ${{ vars.MY_SECRET }}
         run: |
          echo "The repository variable is: $MY_VARIABLE"
       # Runs a set of commands using the runners shell
